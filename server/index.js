@@ -6,7 +6,7 @@ const RegisterModel = require("./models/Register");
 const app = express();
 app.use(
   cors({
-    origin: ["https://new-youtbe-try-frontend.vercel.app"],
+    origin: ["*"],
     methods: ["POST", "GET"],
     credentials: true,
   })
