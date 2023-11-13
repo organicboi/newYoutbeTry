@@ -11,7 +11,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://new-youtbe-try.vercel.app//register", {
+      .post("https://new-youtbe-try.vercel.app/register", {
         name,
         email,
         password,
