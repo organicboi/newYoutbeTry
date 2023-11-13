@@ -6,7 +6,7 @@ const RegisterModel = require("./models/Register");
 const app = express();
 app.use(
   cors({
-    origin: ["https://deploy-mern-frontend.vercel.app"],
+    origin: ["https://new-youtbe-try-frontend.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true,
   })
@@ -16,7 +16,7 @@ app.use(express.json());
 mongoose.connect(
   "mongodb+srv://amgakshaygaddi:p1rPrIFN3f59vJoc@cluster0.jfn9wmp.mongodb.net/test?retryWrites=true&w=majority"
 );
-// p1rPrIFN3f59vJoc
+
 
 app.get("/", (req, res) => {
   res.json("Hello");
